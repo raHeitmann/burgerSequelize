@@ -1,3 +1,12 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+ul{
+  padding:20px;
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -10,10 +19,35 @@ li {
 
 .create-update-form {
   padding: 5px;
-  margin: 5px;
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
   background: aqua;
 }
 
 .form-group {
   margin-bottom: 5px;
+}
+
+#container {
+  display: inline-block;
+}
+
+#leftSide {
+  float: left;
+  width: 200px;
+  max-width: 50%;
+}
+
+
+
+#rightSide {
+  float: left;
+  width:200px;
+  max-width: 50%;
+}
+
+#burgerPic {
+  width:200px;
+  height: auto;
 }
