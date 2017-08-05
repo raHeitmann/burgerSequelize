@@ -1,9 +1,9 @@
 var mysql = require("mysql");
 var connection;
 var Sequelize = require("sequelize");
-if (process.env.JAWSDB_URL){
-  var sequelize = mysql.createConnection(process.env.JAWSDB_URL);
-} else{
+// if (process.env.JAWSDB_URL){
+//   var sequelize = mysql.createConnection(process.env.JAWSDB_URL);
+// } else{
 var sequelize = new Sequelize("burgers_db", "root", "root", {
     host: "localhost",
     dialect: "mysql",
@@ -14,7 +14,7 @@ var sequelize = new Sequelize("burgers_db", "root", "root", {
     }
 
 });
-};
+// };
 
 
 module.exports = sequelize;
